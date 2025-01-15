@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 56px;
+        }
+        .hero {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        .form-section {
+            padding: 40px 0;
+        }
+        .form-section h2 {
+            margin-bottom: 20px;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg bg-info fixed-top">
+        <div class="container">
+            <a class="navbar-brand" style="color:white; font-weight:600;" href="#">Good Papper</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:white; font-weight:600;" href="#form">Form</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Tere tulemast meie veebilehele!</h1>
+<h2>Avasta meie maagiline maailm</h2>
+<p>Tere tulemast meie imelisse veebilehele, kus saad avastada põnevat ja ainulaadset sisu. Oleme loonud selle keskkonna just sinu jaoks, et pakkuda sulle meeldivaid elamusi ja avastamisrõõmu.</p>
+<p>Siin leiad laia valiku huvitavaid artikleid, kauneid pilte ning inspireerivaid videoid. Meie eesmärk on pakkuda sulle parimat kogemust, mis jääb meelde ja toob naeratuse suule.</p>
+        </div>
+    </section>
+
+    <!-- Images Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row" style="text-align: center;">
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1734426561130-9e060ae9b03c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzczNTl8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzY5NTA1MzF8&ixlib=rb-4.0.3&q=80&w=1080" class="img-fluid" style="max-height:600px;" alt="Image 1">
+                </div>
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1734014938145-fd1ba3a8cf5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzczNTl8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzY5NTA1MzF8&ixlib=rb-4.0.3&q=80&w=1080" class="img-fluid" style="max-height:600px;" alt="Image 2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section id="form" class="form-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" style="color:white;" class="btn bg-info">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 My Landing Page. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
